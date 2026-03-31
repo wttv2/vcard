@@ -4,29 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Armando Cardoza</title>
+
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-  <div class="card">
-    <h1>Armando Cardoza</h1>
-    <p class="subtitle">Desarrollador Android</p>
-    <p class="subtitle">Transporte Ejecutivo</p>
+<div class="card">
 
-    <div class="buttons">
-      <a href="tel:+50371018695">📞 Llamar 1</a>
-      <a href="tel:+50371991662">📞 Llamar 2</a>
-      <a href="mailto:arcardev77@gmail.com">✉️ Email</a>
-    </div>
+  <button id="themeToggle">☀️</button>
 
-    <a class="save-contact" href="contact.vcf" download>
-      💾 Guardar Contacto
-    </a>
+  <h1>Armando Cardoza</h1>
+  <p class="subtitle">Desarrollador Android</p>
+  <p class="subtitle">Transporte Ejecutivo</p>
 
-    <div class="qr">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://TU_USUARIO.github.io/vcard/" alt="QR">
-    </div>
-  </div>
+  <div class="buttons">
 
+  <a href="tel:+50371018695">
+    <svg viewBox="0 0 24 24">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.24 
+      c1.12.37 2.33.57 3.59.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.3 21 
+      3 13.7 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 
+      3.59a1 1 0 01-.25 1l-2.2 2.2z"/>
+    </svg>
+    Llamar 1
+  </a>
+
+  <a href="tel:+50371991662">
+    <svg viewBox="0 0 24 24">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.24 
+      c1.12.37 2.33.57 3.59.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.3 21 
+      3 13.7 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 
+      3.59a1 1 0 01-.25 1l-2.2 2.2z"/>
+    </svg>
+    Llamar 2
+  </a>
+
+  <a href="mailto:arcardev77@gmail.com">
+    <svg viewBox="0 0 24 24">
+      <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 
+      2h16a2 2 0 002-2V6a2 2 0 
+      00-2-2zm0 4l-8 5-8-5V6l8 
+      5 8-5v2z"/>
+    </svg>
+    Email
+  </a>
+
+</div>
+
+  <a class="save-contact" href="contact.vcf" download>
+    Descargar contacto
+  </a>
+
+  <p class="visits">Visitas: <span id="counter">0</span></p>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

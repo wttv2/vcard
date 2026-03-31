@@ -2,8 +2,8 @@ BEGIN:VCARD
 VERSION:3.0
 N:Cardoza;Armando
 FN:Armando Cardoza
-TITLE:Transporte Ejecutivo / Desarrollador Android
-TEL;TYPE=CELL:+50371018695
-TEL;TYPE=CELL:+50371991662
+TITLE:Desarrollador Android / Transporte Ejecutivo
+TEL:+50371018695
+TEL:+50371991662
 EMAIL:arcardev77@gmail.com
 END:VCARD
