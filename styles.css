@@ -129,43 +129,44 @@ h1 {
 
 .icon {
   position: absolute;
-  right: -40px;
+  right: 0;
   top: 0;
   width: 20px;
   height: 20px;
   opacity: 0;
+  transform: translateX(40px);
 }
 
-/* ANDROID ANIMACIÓN */
+/* ANDROID */
 .android {
-  animation: slideIcon 4s infinite;
+  animation: slideIcon 4s infinite ease-in-out;
 }
 
-/* CAR ANIMACIÓN (delay) */
+/* CAR (delay) */
 .car {
-  animation: slideIcon 4s infinite;
+  animation: slideIcon 4s infinite ease-in-out;
   animation-delay: 2s;
 }
 
 @keyframes slideIcon {
   0% {
-    right: -40px;
+    transform: translateX(40px);
     opacity: 0;
   }
   20% {
-    right: 10px;
+    transform: translateX(0px);
     opacity: 1;
   }
   50% {
-    right: 10px;
+    transform: translateX(0px);
     opacity: 1;
   }
   80% {
-    right: -40px;
+    transform: translateX(40px);
     opacity: 0;
   }
   100% {
-    right: -40px;
+    transform: translateX(40px);
     opacity: 0;
   }
 }
