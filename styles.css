@@ -87,7 +87,7 @@ h1 {
 .save-contact {
   display: block;
   margin-top: 18px;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   color: var(--accent);
   transition: 0.2s;

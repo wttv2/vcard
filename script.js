@@ -1,16 +1,31 @@
 // 🌗 DARK / LIGHT MODE AUTO
 const toggle = document.getElementById("themeToggle");
 
-if (localStorage.getItem("theme") === "light") {
+// aplicar tema guardado
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
   document.body.classList.add("light");
 }
 
-toggle.onclick = () => {
+// actualizar icono SIEMPRE correctamente
+function updateIcon() {
+  toggle.textContent = document.body.classList.contains("light") ? "🌙" : "☀️";
+}
+
+// ejecutar al cargar
+updateIcon();
+
+// click toggle
+toggle.addEventListener("click", () => {
   document.body.classList.toggle("light");
-  localStorage.setItem("theme",
-    document.body.classList.contains("light") ? "light" : "dark"
-  );
-};
+
+  const isLight = document.body.classList.contains("light");
+
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+
+  updateIcon();
+});
 
 // 📊 CONTADOR SIMPLE (LOCAL)
 let visits = localStorage.getItem("visits") || 0;
