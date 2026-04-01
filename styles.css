@@ -113,3 +113,59 @@ h1 {
   border-radius:10px;
   cursor:pointer;
 }
+
+.role {
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.role span {
+  position: relative;
+  z-index: 2;
+}
+
+.icon {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+
+/* ANDROID ANIMACIÓN */
+.android {
+  animation: slideIcon 4s infinite;
+}
+
+/* CAR ANIMACIÓN (delay) */
+.car {
+  animation: slideIcon 4s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes slideIcon {
+  0% {
+    right: -40px;
+    opacity: 0;
+  }
+  20% {
+    right: 10px;
+    opacity: 1;
+  }
+  50% {
+    right: 10px;
+    opacity: 1;
+  }
+  80% {
+    right: -40px;
+    opacity: 0;
+  }
+  100% {
+    right: -40px;
+    opacity: 0;
+  }
+}
